@@ -5,6 +5,9 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
+  /* Optional max-width if you prefer narrower text columns */
+  /* max-width: 1200px;  
+  margin: 0 auto; */
 }
 
 /* Navigation background */
@@ -12,14 +15,19 @@ nav.navbar {
   background-color: #1f1f1f;
 }
 
-/* Hero / Header Section */
+/* Hero / Header Section 
+   - Using a subtle gradient for extra flair
+*/
 .hero {
-  background-color: #1f1f1f;
+  background: linear-gradient(135deg, #1f1f1f 0%, #2a2a2a 100%);
+  padding: 3rem 0; /* Increased vertical padding */
 }
 
 /* Section Titles and Horizontal Rule */
 section h2 {
   margin-top: 1rem;
+  font-weight: 600; /* Slightly bolder headings */
+  letter-spacing: 0.5px;
 }
 
 section hr {
@@ -37,6 +45,8 @@ section {
 footer {
   background-color: #1f1f1f;
   color: #ffffff;
+  padding: 2rem 0; /* Increased padding for a more balanced footer */
+  text-align: center; /* Ensures centered footer text if not already */
 }
 
 /* Links: orange default, darker orange on hover */
@@ -44,13 +54,19 @@ a,
 a:visited {
   color: #ffa500;
   text-decoration: none;
+  transition: color 0.2s ease-in-out; /* Smooth color transition */
 }
 a:hover {
   color: #ff8c00;
 }
 
-/* Profile image in hero */
+/* Profile image in hero 
+   - Optional accent border and circle shape
+*/
 .hero img {
   border: 2px solid #ffa500; /* Optional accent border */
   border-radius: 50%;
+  /* You could also add a shadow, if desired:
+     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  */
 }
