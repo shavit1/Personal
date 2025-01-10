@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>John Doe - Professional Profile</title>
+  <title>John Doe - Dark Mode Profile</title>
   
   <!-- Bootstrap CSS -->
   <link 
@@ -11,12 +11,13 @@
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
   />
   
-  <!-- Custom CSS -->
+  <!-- Custom CSS (dark mode) -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+  <!-- Navigation (use 'navbar-dark' since it's on a dark background) -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
       <a class="navbar-brand" href="#">John Doe</a>
       <button 
@@ -51,20 +52,21 @@
   </nav>
 
   <!-- Header / Hero Section -->
-  <header class="bg-primary text-white text-center py-5">
+  <header class="hero text-center text-white py-5">
     <div class="container">
+      <!-- Example Profile Image (Placeholder) -->
       <img 
         src="https://via.placeholder.com/150" 
         alt="Profile Picture" 
-        class="rounded-circle mb-3" 
+        class="rounded-circle mb-3"
       />
       <h1>John Doe</h1>
-      <p class="lead">Software Engineer &amp; Web Developer</p>
+      <p class="lead">Software Engineer & Web Developer</p>
     </div>
   </header>
 
   <!-- About Section -->
-  <section class="py-5" id="about">
+  <section id="about" class="py-5">
     <div class="container">
       <h2>About Me</h2>
       <hr />
@@ -72,13 +74,13 @@
         I’m a passionate software engineer with 5+ years of experience 
         building dynamic web applications and services. I specialize in 
         JavaScript, React, and Node.js, with a focus on clean code and 
-        maintaining best practices.
+        best practices.
       </p>
     </div>
   </section>
 
   <!-- Experience Section -->
-  <section class="py-5 bg-light" id="experience">
+  <section id="experience" class="py-5">
     <div class="container">
       <h2>Experience</h2>
       <hr />
@@ -86,7 +88,7 @@
       <div class="row">
         <div class="col-md-6 mb-3">
           <h4>Senior Software Engineer</h4>
-          <h6 class="text-muted">Tech Corp, 2023 - Present</h6>
+          <h6 class="text-muted">Tech Corp (2023 - Present)</h6>
           <p>
             Leading a team of developers to build modern SaaS applications 
             with a microservices architecture. Responsible for full-stack 
@@ -96,7 +98,7 @@
         
         <div class="col-md-6 mb-3">
           <h4>Software Engineer</h4>
-          <h6 class="text-muted">Web Solutions, 2020 - 2023</h6>
+          <h6 class="text-muted">Web Solutions (2020 - 2023)</h6>
           <p>
             Built and maintained web applications using React, Node.js, 
             and MongoDB. Implemented CI/CD pipelines to improve development 
@@ -108,13 +110,12 @@
   </section>
 
   <!-- Education Section -->
-  <section class="py-5" id="education">
+  <section id="education" class="py-5">
     <div class="container">
       <h2>Education</h2>
       <hr />
-      
       <h4>B.S. in Computer Science</h4>
-      <h6 class="text-muted">University of Somewhere, 2016 - 2020</h6>
+      <h6 class="text-muted">University of Somewhere (2016 - 2020)</h6>
       <p>
         Specialized in software engineering, data structures, and 
         algorithm design.
@@ -123,13 +124,12 @@
   </section>
 
   <!-- Skills Section -->
-  <section class="py-5 bg-light" id="skills">
+  <section id="skills" class="py-5">
     <div class="container">
       <h2>Skills</h2>
       <hr />
-      
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-3 mb-3">
           <h4>Frontend</h4>
           <ul>
             <li>HTML/CSS</li>
@@ -137,17 +137,15 @@
             <li>React, Angular</li>
           </ul>
         </div>
-        
-        <div class="col-md-3">
+        <div class="col-md-3 mb-3">
           <h4>Backend</h4>
           <ul>
-            <li>Node.js</li>
-            <li>Express</li>
+            <li>Node.js, Express</li>
             <li>Python (Flask, Django)</li>
+            <li>Go (Basics)</li>
           </ul>
         </div>
-        
-        <div class="col-md-3">
+        <div class="col-md-3 mb-3">
           <h4>Databases</h4>
           <ul>
             <li>MySQL</li>
@@ -155,9 +153,8 @@
             <li>MongoDB</li>
           </ul>
         </div>
-        
-        <div class="col-md-3">
-          <h4>Tools &amp; Processes</h4>
+        <div class="col-md-3 mb-3">
+          <h4>Tools & Processes</h4>
           <ul>
             <li>Git, GitHub</li>
             <li>Docker</li>
@@ -169,15 +166,11 @@
   </section>
 
   <!-- Contact Section -->
-  <section class="py-5" id="contact">
+  <section id="contact" class="py-5">
     <div class="container">
       <h2>Contact</h2>
       <hr />
-      <p>
-        Interested in working together? Feel free to reach out through 
-        any of the platforms below.
-      </p>
-      
+      <p>Interested in working together? Let’s connect!</p>
       <ul class="list-unstyled">
         <li><strong>Email:</strong> <a href="mailto:johndoe@gmail.com">johndoe@gmail.com</a></li>
         <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/johndoe">linkedin.com/in/johndoe</a></li>
@@ -187,15 +180,16 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-dark text-white py-3 text-center">
+  <footer class="text-center py-3">
     <div class="container">
       <p>&copy; 2025 John Doe. All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- Bootstrap JS (optional, if you need dropdown or other components) -->
+  <!-- Bootstrap JS (optional) -->
   <script 
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
   </script>
 </body>
 </html>
+
