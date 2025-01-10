@@ -1,0 +1,58 @@
+/* Base dark background and white text */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navigation background */
+  nav.navbar {
+    background-color: #1f1f1f; /* A dark grey */
+  }
+  
+  /* Hero / Header Section */
+  .hero {
+    background-color: #1f1f1f;
+  }
+  
+  /* Section Titles and Horizontal Rule */
+  section h2 {
+    margin-top: 1rem;
+  }
+  
+  section hr {
+    width: 50px;
+    border: 2px solid #ffa500; /* Orange accent for headings */
+    margin: 0.5rem 0 1rem;
+  }
+  
+  /* General Section Spacing */
+  section {
+    padding: 3rem 0;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #1f1f1f;
+    color: #ffffff;
+  }
+  
+  /* Links: orange default, slightly darker orange on hover */
+  a,
+  a:visited {
+    color: #ffa500;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #ff8c00;
+  }
+  
+  /* Profile Image in Hero */
+  .hero img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
