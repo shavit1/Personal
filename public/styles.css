@@ -48,7 +48,7 @@ nav.navbar {
   width: 400px;               /* Larger circle */
   height: 400px;              /* Match width for a perfect circle */
   object-fit: cover;          /* Fill circle (crops edges) */
-  object-position: 50% 10%;   /* Shift visible area downward (15% from top) */
+  object-position: 50% 0%;   /* Shift visible area downward (15% from top) */
   border: 2px solid #ffa500;  /* Orange accent */
   display: block;
   margin: 0 auto;
