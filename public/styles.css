@@ -11,11 +11,7 @@ body {
   padding: 0;
 }
 
-/*
-----------------------------------------
- Navigation (dark background)
-----------------------------------------
-*/
+/* Navigation background */
 nav.navbar {
   background-color: #1f1f1f;
 }
@@ -30,32 +26,22 @@ nav.navbar {
 .hero {
   background: linear-gradient(135deg, #1f1f1f 0%, #2a2a2a 100%);
   padding: 3rem 0;
-  text-align: center; /* center the content horizontally */
+  text-align: center; 
 }
 
 /*
 ----------------------------------------
- Hero Image => Full, Natural Size
-----------------------------------------
- - No circle (no border-radius)
- - No object-fit
- - No fixed width or height
+ Hero Image => No cropping, No circle
+ - max-width:100% => scales down for mobile
+ - height:auto => keeps aspect ratio
+ - no object-fit => shows entire image
 */
 .hero-image {
-  /* The browser will display the image
-     at its actual pixel dimensions. */
-  display: inline-block;
+  max-width: 100%;
+  height: auto;
   border: 2px solid #ffa500; /* optional accent border */
-  /* 
-    If the image is huge, it may overflow. 
-    To keep it fully visible on smaller screens, 
-    use a responsive approach:
-
-    max-width: 100%;
-    height: auto;
-  */
-
-  /* But for "full size" strictly: do NOT impose any constraint. */
+  display: block;
+  margin: 0 auto;
 }
 
 /*
@@ -65,13 +51,13 @@ nav.navbar {
 */
 section h2 {
   margin-top: 1rem;
-  font-weight: 600; 
+  font-weight: 600;
   letter-spacing: 0.5px;
 }
 
 section hr {
   width: 50px;
-  border: 2px solid #ffa500; 
+  border: 2px solid #ffa500;
   margin: 0.5rem 0 1rem;
 }
 
@@ -98,7 +84,7 @@ footer {
 
 /*
 ----------------------------------------
- Link Colors
+ Links: orange default, darker orange on hover
 ----------------------------------------
 */
 a,
