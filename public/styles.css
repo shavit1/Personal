@@ -30,23 +30,26 @@ nav.navbar {
 .hero {
   background: linear-gradient(135deg, #1f1f1f 0%, #2a2a2a 100%);
   padding: 3rem 0;
-  text-align: center; /* Center text & image horizontally */
+  text-align: center; /* center the text and image horizontally */
 }
 
 /*
 ----------------------------------------
- Hero Image (NO CIRCLE)
+ Hero Image => Full Natural Size
 ----------------------------------------
 */
 .hero-image {
-  /* 
-     Let the browser maintain the natural aspect ratio.
-     max-width ensures the image isn't too large on small screens.
+  /* Display the image at its actual, original resolution */
+  display: inline-block;
+  border: 2px solid #ffa500; /* optional border */
+  /* height: auto;  Not necessary if you omit width. 
+     The browser uses the native image size by default. 
+   */
+
+  /* If you want to truly force the FULL original size 
+     even if it overflows the screen, 
+     do NOT set max-width or width here. 
   */
-  max-width: 300px; /* Or 400px, your choice */
-  height: auto;     /* Keep proportions */
-  border: 2px solid #ffa500; /* Optional border, remove if you want no border */
-  display: inline-block;      /* inline-block so text-align: center works */
 }
 
 /*
@@ -56,13 +59,13 @@ nav.navbar {
 */
 section h2 {
   margin-top: 1rem;
-  font-weight: 600;
+  font-weight: 600; 
   letter-spacing: 0.5px;
 }
 
 section hr {
   width: 50px;
-  border: 2px solid #ffa500;
+  border: 2px solid #ffa500; 
   margin: 0.5rem 0 1rem;
 }
 
@@ -102,6 +105,7 @@ a:visited {
 a:hover {
   color: #ff8c00;
 }
+
 
 
 
