@@ -9,11 +9,23 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
+  line-height: 1.6;
 }
 
 /* Navigation background */
 nav.navbar {
   background-color: #1f1f1f;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+.nav-link {
+  color: #ffa500 !important; /* Orange links */
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #ff8c00 !important; /* Darker orange on hover */
 }
 
 /*
@@ -25,8 +37,18 @@ nav.navbar {
 */
 .hero {
   background: linear-gradient(135deg, #1f1f1f 0%, #2a2a2a 100%);
-  padding: 3rem 0;
+  padding: 4rem 0; /* Extra padding for hero prominence */
   text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
 
 /*
@@ -37,11 +59,12 @@ nav.navbar {
  - no object-fit => shows entire image
 */
 .hero-image {
-  max-width: 1000px; /* Set a smaller max width */
+  max-width: 200px; /* Set a smaller max width */
   height: auto; /* Maintain aspect ratio */
   display: block;
-  margin: 0 auto 1rem; /* Center the image and add bottom margin */
-  border: 2px solid orange; /* Optional border */
+  margin: 0 auto 1.5rem; /* Center the image and add bottom margin */
+  border: 2px solid #ffa500; /* Optional border */
+  border-radius: 8px; /* Slight rounding for softer appearance */
 }
 
 /*
@@ -50,15 +73,18 @@ nav.navbar {
 ----------------------------------------
 */
 section h2 {
-  margin-top: 1rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
   font-weight: 600;
   letter-spacing: 0.5px;
+  text-align: center;
+  color: #ffa500; /* Orange for section headers */
 }
 
 section hr {
-  width: 50px;
+  width: 60px;
   border: 2px solid #ffa500;
-  margin: 0.5rem 0 1rem;
+  margin: 0.5rem auto 1.5rem;
 }
 
 /*
@@ -67,7 +93,27 @@ section hr {
 ----------------------------------------
 */
 section {
-  padding: 3rem 0;
+  padding: 3rem 1rem;
+  background-color: #1a1a1a; /* Slightly lighter background for contrast */
+}
+
+section:nth-of-type(even) {
+  background-color: #161616; /* Alternating sections for subtle variation */
+}
+
+/* Paragraphs */
+section p {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+}
+
+/* Lists */
+section ul {
+  padding-left: 1.5rem;
+}
+
+section ul li {
+  margin-bottom: 0.5rem;
 }
 
 /*
@@ -80,6 +126,10 @@ footer {
   color: #ffffff;
   padding: 2rem 0;    
   text-align: center; 
+}
+
+footer p {
+  margin: 0;
 }
 
 /*
@@ -97,6 +147,42 @@ a:visited {
 a:hover {
   color: #ff8c00;
 }
+
+/*
+----------------------------------------
+ Responsive Design
+----------------------------------------
+*/
+@media (max-width: 768px) {
+  .hero {
+    padding: 2.5rem 0;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero-image {
+    max-width: 80%; /* Scale down hero image for smaller screens */
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
+
+  nav .navbar-collapse {
+    text-align: center;
+  }
+}
+
 
 
 
