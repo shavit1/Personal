@@ -30,26 +30,32 @@ nav.navbar {
 .hero {
   background: linear-gradient(135deg, #1f1f1f 0%, #2a2a2a 100%);
   padding: 3rem 0;
-  text-align: center; /* center the text and image horizontally */
+  text-align: center; /* center the content horizontally */
 }
 
 /*
 ----------------------------------------
- Hero Image => Full Natural Size
+ Hero Image => Full, Natural Size
 ----------------------------------------
+ - No circle (no border-radius)
+ - No object-fit
+ - No fixed width or height
 */
 .hero-image {
-  /* Display the image at its actual, original resolution */
+  /* The browser will display the image
+     at its actual pixel dimensions. */
   display: inline-block;
-  border: 2px solid #ffa500; /* optional border */
-  /* height: auto;  Not necessary if you omit width. 
-     The browser uses the native image size by default. 
-   */
+  border: 2px solid #ffa500; /* optional accent border */
+  /* 
+    If the image is huge, it may overflow. 
+    To keep it fully visible on smaller screens, 
+    use a responsive approach:
 
-  /* If you want to truly force the FULL original size 
-     even if it overflows the screen, 
-     do NOT set max-width or width here. 
+    max-width: 100%;
+    height: auto;
   */
+
+  /* But for "full size" strictly: do NOT impose any constraint. */
 }
 
 /*
