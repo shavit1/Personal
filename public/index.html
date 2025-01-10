@@ -1,75 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social Networking Platform</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>John Doe - Professional Profile</title>
+  
+  <!-- Bootstrap CSS -->
+  <link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+  />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">NetConnect</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#profile">Profile</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#jobs">Jobs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#messages">Messages</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">John Doe</a>
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Hero Section -->
-    <section class="hero bg-primary text-white text-center py-5">
-        <div class="container">
-            <h1>Welcome to NetConnect</h1>
-            <p>Connect, Collaborate, and Grow Your Network</p>
-            <a href="#" class="btn btn-light mt-3">Get Started</a>
-        </div>
-    </section>
+  <!-- Header / Hero Section -->
+  <header class="bg-primary text-white text-center py-5">
+    <div class="container">
+      <img 
+        src="https://via.placeholder.com/150" 
+        alt="Profile Picture" 
+        class="rounded-circle mb-3" 
+      />
+      <h1>John Doe</h1>
+      <p class="lead">Software Engineer &amp; Web Developer</p>
+    </div>
+  </header>
 
-    <!-- Features Section -->
-    <section class="features py-5">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-md-4">
-                    <h3>Professional Profiles</h3>
-                    <p>Create a standout profile that showcases your expertise.</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Job Opportunities</h3>
-                    <p>Discover and apply for jobs that match your skills.</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Real-time Messaging</h3>
-                    <p>Connect with professionals through seamless messaging.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- About Section -->
+  <section class="py-5" id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <hr />
+      <p>
+        I’m a passionate software engineer with 5+ years of experience 
+        building dynamic web applications and services. I specialize in 
+        JavaScript, React, and Node.js, with a focus on clean code and 
+        maintaining best practices.
+      </p>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-3">
-        <div class="container text-center">
-            <p>&copy; 2025 NetConnect. All rights reserved.</p>
+  <!-- Experience Section -->
+  <section class="py-5 bg-light" id="experience">
+    <div class="container">
+      <h2>Experience</h2>
+      <hr />
+      
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <h4>Senior Software Engineer</h4>
+          <h6 class="text-muted">Tech Corp, 2023 - Present</h6>
+          <p>
+            Leading a team of developers to build modern SaaS applications 
+            with a microservices architecture. Responsible for full-stack 
+            development, code reviews, and product planning.
+          </p>
         </div>
-    </footer>
+        
+        <div class="col-md-6 mb-3">
+          <h4>Software Engineer</h4>
+          <h6 class="text-muted">Web Solutions, 2020 - 2023</h6>
+          <p>
+            Built and maintained web applications using React, Node.js, 
+            and MongoDB. Implemented CI/CD pipelines to improve development 
+            efficiency and product stability.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Education Section -->
+  <section class="py-5" id="education">
+    <div class="container">
+      <h2>Education</h2>
+      <hr />
+      
+      <h4>B.S. in Computer Science</h4>
+      <h6 class="text-muted">University of Somewhere, 2016 - 2020</h6>
+      <p>
+        Specialized in software engineering, data structures, and 
+        algorithm design.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="py-5 bg-light" id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <hr />
+      
+      <div class="row">
+        <div class="col-md-3">
+          <h4>Frontend</h4>
+          <ul>
+            <li>HTML/CSS</li>
+            <li>JavaScript/TypeScript</li>
+            <li>React, Angular</li>
+          </ul>
+        </div>
+        
+        <div class="col-md-3">
+          <h4>Backend</h4>
+          <ul>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>Python (Flask, Django)</li>
+          </ul>
+        </div>
+        
+        <div class="col-md-3">
+          <h4>Databases</h4>
+          <ul>
+            <li>MySQL</li>
+            <li>PostgreSQL</li>
+            <li>MongoDB</li>
+          </ul>
+        </div>
+        
+        <div class="col-md-3">
+          <h4>Tools &amp; Processes</h4>
+          <ul>
+            <li>Git, GitHub</li>
+            <li>Docker</li>
+            <li>CI/CD (Jenkins, GitHub Actions)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-5" id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <hr />
+      <p>
+        Interested in working together? Feel free to reach out through 
+        any of the platforms below.
+      </p>
+      
+      <ul class="list-unstyled">
+        <li><strong>Email:</strong> <a href="mailto:johndoe@gmail.com">johndoe@gmail.com</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/johndoe">linkedin.com/in/johndoe</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/johndoe">github.com/johndoe</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-3 text-center">
+    <div class="container">
+      <p>&copy; 2025 John Doe. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (optional, if you need dropdown or other components) -->
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+  </script>
 </body>
 </html>
