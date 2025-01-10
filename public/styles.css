@@ -9,11 +9,6 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-
-  /* If you want a narrower page, uncomment:
-     max-width: 1200px; 
-     margin: 0 auto;
-  */
 }
 
 /*
@@ -41,19 +36,22 @@ nav.navbar {
 ----------------------------------------
  Hero Image
 ----------------------------------------
- - Centered, circular, and enlarged
- - The "rounded-circle" class from Bootstrap 
-   also applies border-radius: 50%, which is fine.
- - This ensures a large diameter for your head.
+ - Circle: 400px diameter
+ - object-fit: cover keeps the circle filled
+ - object-position moves the image inside the circle 
+   so your head isn't cropped. Adjust as needed:
+   - 50% 10% = center horizontally, 10% from top
+   - 50% 20% = center horizontally, 20% from top
+   - etc.
 */
 .hero-image {
-  /* Force the circle to 300px diameter */
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  border: 2px solid #ffa500;  /* Orange accent border */
-  display: block;             /* Ensure block-level for center margin */
-  margin: 0 auto;             /* Center horizontally */
+  width: 400px;               /* Larger circle */
+  height: 400px;              /* Match width for a perfect circle */
+  object-fit: cover;          /* Fill circle (crops edges) */
+  object-position: 50% 15%;   /* Shift visible area downward (15% from top) */
+  border: 2px solid #ffa500;  /* Orange accent */
+  display: block;
+  margin: 0 auto;
 }
 
 /*
@@ -90,8 +88,8 @@ section {
 footer {
   background-color: #1f1f1f;
   color: #ffffff;
-  padding: 2rem 0;    /* Balanced footer spacing */
-  text-align: center; /* Centered footer text */
+  padding: 2rem 0;    
+  text-align: center; 
 }
 
 /*
@@ -112,5 +110,6 @@ a:visited {
 a:hover {
   color: #ff8c00;
 }
+
 
 
