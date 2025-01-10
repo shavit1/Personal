@@ -57,6 +57,7 @@
     </div>
   </header>
 
+
   <!-- About Section -->
   <section id="about" class="py-5">
     <div class="container">
@@ -275,7 +276,6 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
   <section id="contact" class="py-5">
     <div class="container">
       <h2>Contact</h2>
@@ -285,13 +285,6 @@
         <li><strong>Phone:</strong> +1-547-937-755</li>
         <li><strong>Email:</strong> 
           <a href="mailto:nshavit@protonmail.ch">nshavit@protonmail.ch</a>
-        </li>
-        <li class="mt-3">
-          <strong>My Wife's Profile:</strong> 
-          <!-- Replace '#' with your wife's actual profile URL -->
-          <a href="#" target="_blank">
-            View Profile
-          </a>
         </li>
       </ul>
     </div>
@@ -308,9 +301,18 @@
   <script 
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
   </script>
+
+  <!-- Custom JavaScript -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Clear URL fragment if present
+      if (window.location.hash) {
+        window.history.replaceState({}, document.title, window.location.pathname);
+      }
+    });
+  </script>
 </body>
 </html>
-
 
 
 
