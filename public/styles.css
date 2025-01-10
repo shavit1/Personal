@@ -26,16 +26,16 @@ nav.navbar {
 }
 
 /* Profile image in hero 
-   - Centered, circular, and adjusted to avoid cutting off your head
+   - Centered, circular, and enlarged to avoid cutting off your head
 */
 .hero img {
   display: block;
-  margin: 0 auto;       /* Centers the image horizontally */
-  width: 200px;         /* Fixed width for a circular shape */
-  height: 200px;        /* Match width for a perfect circle */
-  object-fit: cover;    /* Fills the circle, crops edges if necessary */
-  object-position: 50% 20%; /* Adjust focus if needed, e.g., top-center (50% 20%) */
-  border: 2px solid #ffa500; /* Optional accent border */
+  margin: 0 auto;             /* Center the image horizontally */
+  width: 300px;               /* Increase the diameter here */
+  height: 300px;              /* Match width for a perfect circle */
+  object-fit: cover;          /* Fill the circle (crops edges if necessary) */
+  object-position: 50% 20%;   /* Adjust vertical focus if needed */
+  border: 2px solid #ffa500;  /* Optional accent border */
   border-radius: 50%;
 }
 
