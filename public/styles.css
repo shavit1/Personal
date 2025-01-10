@@ -39,9 +39,9 @@ nav.navbar {
 .hero-image {
   max-width: 100%;
   height: auto;
-  border: 2px solid #ffa500; /* optional accent border */
   display: block;
   margin: 0 auto;
+  border: 2px solid orange; /* Optional border for emphasis */
 }
 
 /*
