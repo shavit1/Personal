@@ -37,10 +37,10 @@ nav.navbar {
  - no object-fit => shows entire image
 */
 .hero-image {
-  max-width: 100%;
-  height: auto;
+  max-width: 200px; /* Set a smaller max width */
+  height: auto; /* Maintain aspect ratio */
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 1rem; /* Center the image and add bottom margin */
   border: 2px solid orange; /* Optional border */
 }
 
